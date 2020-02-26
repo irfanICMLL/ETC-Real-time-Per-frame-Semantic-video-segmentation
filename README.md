@@ -19,7 +19,7 @@ baseline with mIoU 69.79, temporal consistncy 68.50:
 
 ![image](https://github.com/irfanICMLL/ETC-Real-time-Per-frame-Semantic-video-segmentation/blob/master/demo/val.gif)
 
-![image](https://github.com/irfanICMLL/ETC-Real-time-Per-frame-Semantic-video-segmentation/blob/master/demo/demo_Seq.gif)
+![image](https://github.com/irfanICMLL/ETC-Real-time-Per-frame-Semantic-video-segmentation/blob/master/demo/demo_seq.gif)
 
 
 ## Performance on the Cityscape dataset
