@@ -1,6 +1,14 @@
-#  Structured Knowledge Distillation for Dense Prediction
+#  Efficient Semantic Video Segmentation withPer-frame Inference
+In semantic segmentation, most existing real-time deep
+models trained with each frame independently may produce inconsistent results for a video sequence. 
+Advanced methods take into considerations
+the correlations in the video sequence,
+e.g., by propagating the results to the neighboring frames using optical flow, or extracting the frame representations with other frames, which may lead to inaccurate results or unbalanced latency. In this work, we process efficient semantic video segmentation in a per-frame fashion during the inference process.
 
-This repository contains the demo evaluate code of our paper [Efficient Semantic Video Segmentation withPer-frame Inference](https://arxiv.org/pdf/).
+Different from previous per-frame models, we explicitly consider the temporal consistency among frames as extra constraints during the training process and embed the temporal consistency into the segmentation network. Therefore, in the inference process, we can process each frame independently with no latency, and improve the temporal consistency with no extra computational cost and post-processing. We employ compact models for real-time execution. To narrow the performance gap between compact models and large models, new knowledge distillation methods are designed. Our results outperform previous keyframe based methods with a better trade-off between the accuracy and the inference speed on popular benchmarks, including the Cityscapes and Camvid.
+The temporal consistency is also improved compared with corresponding baselines which are trained  with each frame independently.
+
+This repository contains the demo evaluate code of our paper [Efficient Semantic Video Segmentation withPer-frame Inference](https://arxiv.org/pdf/). 
 Training code will coming soon.
 ## Sample results
 
@@ -9,9 +17,9 @@ Demo video for the PSPnet-18 on Cityscapes
 ETC with mIoU 73.1, temporal consistncy 70.56 vs
 baseline with mIoU 69.79, temporal consistncy 68.50:
 
-![image](https://github.com/irfanICMLL/ETC-Real-time-Per-frame-Semantic-video-segmentation/blob/master/demo/val.mp4)
+![image](https://github.com/irfanICMLL/ETC-Real-time-Per-frame-Semantic-video-segmentation/blob/master/demo/val.gif)
 
-![image](https://github.com/irfanICMLL/ETC-Real-time-Per-frame-Semantic-video-segmentation/blob/master/demo/demo_seq.mp4)
+![image](https://github.com/irfanICMLL/ETC-Real-time-Per-frame-Semantic-video-segmentation/blob/master/demo/demo_seq.gif)
 
 
 ## Performance on the Cityscape dataset
@@ -47,7 +55,7 @@ Coming soon.
 
 
 ## Acknowledgments
-This code borrows heavily from [SPADE](https://github.com/hszhao/semseg).
+The test code borrows from [semseg](https://github.com/hszhao/semseg).
 
 
 
