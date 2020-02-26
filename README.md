@@ -15,14 +15,14 @@ baseline with mIoU 69.79, temporal consistncy 68.50:
 
 
 ## Performance on the Cityscape dataset
-We apply the distillation method to training the [PSPNet](https://arxiv.org/abs/1612.01105). We used the dataset splits (train/val/test) provided [here](https://github.com/speedinghzl/pytorch-segmentation-toolbox). We trained the models at a resolution of 512x512.
-Pi: Pixel-wise distillation PA: Pair-wise distillation HO: holistic distillation
+We employ the temporal loss the temporal knowledge distillation methods to adapte single frame image segmentation methods for semantic video segmentation methods.
 
-| Model | mIoU |Temporal consitency
-| -- | -- |
+| Model | mIoU |Temporal consitency|
+| -- | -- |--|
 | baseline | 69.79 |68.50|
 | +temporal loss | 71.72 |69.99 |
 | +temporal loss + distillation | 73.06 |70.56 |
+
 
 Note: Other chcekpoints can be obtained by email: yifan.liu04@adelaide.edu.au if needed.
 
