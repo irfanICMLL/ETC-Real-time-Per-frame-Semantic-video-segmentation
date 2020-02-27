@@ -1,4 +1,4 @@
-#  Efficient Semantic Video Segmentation withPer-frame Inference
+#  Efficient Semantic Video Segmentation with Per-frame Inference
 In semantic segmentation, most existing real-time deep
 models trained with each frame independently may produce inconsistent results for a video sequence. 
 Advanced methods take into considerations
