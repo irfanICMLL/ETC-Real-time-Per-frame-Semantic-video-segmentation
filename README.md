@@ -8,7 +8,7 @@ e.g., by propagating the results to the neighboring frames using optical flow, o
 Different from previous per-frame models, we explicitly consider the temporal consistency among frames as extra constraints during the training process and embed the temporal consistency into the segmentation network. Therefore, in the inference process, we can process each frame independently with no latency, and improve the temporal consistency with no extra computational cost and post-processing. We employ compact models for real-time execution. To narrow the performance gap between compact models and large models, new knowledge distillation methods are designed. Our results outperform previous keyframe based methods with a better trade-off between the accuracy and the inference speed on popular benchmarks, including the Cityscapes and Camvid.
 The temporal consistency is also improved compared with corresponding baselines which are trained  with each frame independently.
 
-This repository contains the demo evaluate code of our paper [Efficient Semantic Video Segmentation withPer-frame Inference](https://arxiv.org/pdf/2002.11433.pdf). 
+This repository contains the demo evaluate code of our paper [Efficient Semantic Video Segmentation with Per-frame Inference](https://arxiv.org/pdf/2002.11433.pdf). 
 Training code will coming soon.
 ## Sample results
 
