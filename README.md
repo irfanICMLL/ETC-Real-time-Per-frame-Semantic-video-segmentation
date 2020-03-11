@@ -47,7 +47,7 @@ We have tested our code on Ubuntu 16.04.
 
 ## Quick start to test the model
 1. download the [Cityscape dataset](https://www.cityscapes-dataset.com/)
-2. python tool/test.py [you should change the data-dir to your own].  of VNL and FCOS using our checkpoints.
+2. python tool/test.py.
 
 Please change the ckpt_path in config to compare the results with baseline models
 ## Train script
