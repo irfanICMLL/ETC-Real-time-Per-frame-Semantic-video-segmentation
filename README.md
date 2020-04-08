@@ -47,7 +47,7 @@ We have tested our code on Ubuntu 16.04.
 
 ## Quick start to test the model
 1. download the [Cityscape dataset](https://www.cityscapes-dataset.com/)
-2. python tool/test.py.
+2. python tool/tdemo.py.
 
 Please change the ckpt_path in config to compare the results with baseline models
 ## Train script
