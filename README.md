@@ -43,10 +43,10 @@ pytorch >1.0.0
 We recommend to use [Anaconda](https://conda.io/docs/user-guide/install/linux.html).
 
 We have tested our code on Ubuntu 16.04.
-The flownet need to be compiled following [FlowNetV2](https://github.com/NVIDIA/flownet2-pytorch)
-You can first clone the FlowNetV2, and compile it. 
-Then copy the folder of flownet2-pytorch/networks/resample2d_package,correlation_package,channelnorm_package to OURS/flownet/
-Download the weight of the [flownet](https://drive.google.com/file/d/1hF8vS6YeHkx3j2pfCeQqqZGwA_PJq_Da/view?usp=sharing), and place it in OURS/pretrained_model/
+- The flownet need to be compiled following [FlowNetV2](https://github.com/NVIDIA/flownet2-pytorch)
+- You can first clone the FlowNetV2, and compile it. 
+- Then copy the folder of flownet2-pytorch/networks/resample2d_package,correlation_package,channelnorm_package to OURS/flownet/
+- Download the weight of the [flownet](https://drive.google.com/file/d/1hF8vS6YeHkx3j2pfCeQqqZGwA_PJq_Da/view?usp=sharing), and place it in OURS/pretrained_model/
 
 ## Quick start to test the model
 1. download the [Cityscape dataset](https://www.cityscapes-dataset.com/)
@@ -57,6 +57,8 @@ To evaluate the temporal consistency, you need to install the flownet first.
 2. The download data should be placed in data/cityscapes/leftImg8bit/
 3. Generate the results for the sampled frames, which need to be evaluated: python tool/gen_video.py
 4. Evaluate the temporal consistency based on the warpping mIoU: python tool/eval_tc.py
+
+
 Note that the first time you evaluate the TC, the code will save the flow automatically.
 In our paper, we random sample ~20% of the validation set for testing the TC for all models for efficiency (lists are in 'data/list/cityscapes/val_sam').
 If you want to evaluate with all the validation video clips, you can relpace the 'data/list/cityscapes/val_video_img_sam.lst' with 'data/list/cityscapes/val_video_img.lst', and replace the 'data/list/cityscapes/val_sam' with 'data/list/cityscapes/val'. The trendency of the TC are similar.
