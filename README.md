@@ -50,7 +50,7 @@ We have tested our code on Ubuntu 16.04.
 
 ## Quick start to test the model
 1. download the [Cityscape dataset](https://www.cityscapes-dataset.com/)
-2. python tool/tdemo.py.
+2. python tool/demo.py.
 ## Evaluation the Temporal Consistency
 To evaluate the temporal consistency, you need to install the flownet first.
 1. You need to download the video data of the [cityscapes](https://www.cityscapes-dataset.com/downloads/): leftImg8bit_sequence_trainvaltest.zip 
@@ -60,8 +60,8 @@ To evaluate the temporal consistency, you need to install the flownet first.
 
 
 Note that the first time you evaluate the TC, the code will save the flow automatically.
-In our paper, we random sample ~20% of the validation set for testing the TC for all models for efficiency (lists are in 'data/list/cityscapes/val_sam').
-If you want to evaluate with all the validation video clips, you can relpace the 'data/list/cityscapes/val_video_img_sam.lst' with 'data/list/cityscapes/val_video_img.lst', and replace the 'data/list/cityscapes/val_sam' with 'data/list/cityscapes/val'. The trendency of the TC are similar.
+ - In our paper, we random sample ~20% of the validation set for testing the TC for all models for efficiency (lists are in 'data/list/cityscapes/val_sam').
+ - If you want to evaluate with all the validation video clips, you can relpace the 'data/list/cityscapes/val_video_img_sam.lst' with 'data/list/cityscapes/val_video_img.lst', and replace the 'data/list/cityscapes/val_sam' with 'data/list/cityscapes/val'. The trendency of the TC are similar.
 
 Please change the ckpt_path in config to compare the results with baseline models
 ## Train script
