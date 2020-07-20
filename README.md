@@ -74,17 +74,14 @@ The test code borrows from [semseg](https://github.com/hszhao/semseg).
 If you find this code useful, please cite:
 
 
+```BibTeX
 @article{liu2020efficient,
-
   title={Efficient Semantic Video Segmentation with Per-frame Inference},
-  
   author={Liu, Yifan and Shen, Chunhua and Yu, Changqian and Wang, Jingdong},
-  
   journal={ECCV},
-  
   year={2020}
-  
 }
+```
 
 
 
