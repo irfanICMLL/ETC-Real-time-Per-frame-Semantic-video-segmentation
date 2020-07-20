@@ -75,10 +75,15 @@ If you find this code useful, please cite:
 
 
 @article{liu2020efficient,
+
   title={Efficient Semantic Video Segmentation with Per-frame Inference},
+  
   author={Liu, Yifan and Shen, Chunhua and Yu, Changqian and Wang, Jingdong},
+  
   journal={ECCV},
+  
   year={2020}
+  
 }
 
 
