@@ -51,7 +51,7 @@ We have tested our code on Ubuntu 16.04.
 To train the model, you also need to install apex.
 
 ## Quick start to train the model
-2. python tool/train_with_flow.py.
+1. python tool/train_with_flow.py.
 ## Quick start to test the model
 1. download the [Cityscape dataset](https://www.cityscapes-dataset.com/)
 2. python tool/demo.py.
