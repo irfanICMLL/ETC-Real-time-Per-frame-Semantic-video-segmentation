@@ -45,9 +45,13 @@ We recommend to use [Anaconda](https://conda.io/docs/user-guide/install/linux.ht
 We have tested our code on Ubuntu 16.04.
 - The flownet need to be compiled following [FlowNetV2](https://github.com/NVIDIA/flownet2-pytorch)
 - You can first clone the FlowNetV2, and compile it. 
+  -Note that your cuda version [nvcc -V] should be the same as your torch cuda versio [torch.version.cuda]
 - Then copy the folder of flownet2-pytorch/networks/resample2d_package,correlation_package,channelnorm_package to OURS/flownet/
 - Download the weight of the [flownet](https://drive.google.com/file/d/1hF8vS6YeHkx3j2pfCeQqqZGwA_PJq_Da/view?usp=sharing), and place it in OURS/pretrained_model/
+To train the model, you also need to install apex.
 
+## Quick start to train the model
+2. python tool/train_with_flow.py.
 ## Quick start to test the model
 1. download the [Cityscape dataset](https://www.cityscapes-dataset.com/)
 2. python tool/demo.py.
