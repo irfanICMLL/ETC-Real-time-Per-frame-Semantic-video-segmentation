@@ -69,7 +69,7 @@ Note that the first time you evaluate the TC, the code will save the flow automa
 
 Please change the ckpt_path in config to compare the results with baseline models
 ## Train script
-Coming soon.
+We only release the training code for the motion loss. If you are interested in the temporal knowledge distillation, you can refer to the ./utils/crit.py. All the distillation loss are included. The distillation method is a plug-in method, which can be allpy to different teacher-student network pairs.
 
 
 ## Acknowledgments
