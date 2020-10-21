@@ -199,7 +199,7 @@ def cal_acc(list_of_list, root_dir, pred_folder, classes, flow_warp, flownet, na
                 image_ten = torch.from_numpy(frame.astype(np.float32).transpose(2, 0, 1)).cuda().unsqueeze(0).cuda()
                 frame_ten = torch.from_numpy(image.astype(np.float32).transpose(2, 0, 1)).cuda().unsqueeze(0).cuda()
                 pred_next_ten = torch.from_numpy(pred_next.astype(np.float32)).cuda().unsqueeze(0).unsqueeze(0).cuda()
-                # flownet.eval()
+                flownet.eval()
 
                 output_flow_filename = os.path.join(root_dir + '/flow_val/', image_name + '.flo')
                 if not os.path.exists(root_dir + '/flow_val/'):
