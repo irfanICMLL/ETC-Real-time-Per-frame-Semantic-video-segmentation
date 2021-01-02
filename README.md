@@ -9,6 +9,11 @@ Different from previous per-frame models, we explicitly consider the temporal co
 The temporal consistency is also improved compared with corresponding baselines which are trained  with each frame independently.
 
 This repository contains the demo evaluate code and the training scripts for motion loss of our paper (ECCV2020) [Efficient Semantic Video Segmentation with Per-frame Inference](https://arxiv.org/pdf/2002.11433.pdf). 
+##Updated
+We generated new pseudo labels with test-time augmentation on video sequence in data-coarse. Besides, we filter out the regions with low confidence. Training with the provided dataset, most models can achieve a better results with mIoU and temporal consistency. The pseudo data can be downloaded from [this link](https://cloudstor.aarnet.edu.au/plus/s/lEQvdm3Jl34VvuL).
+
+
+
 ## Sample results
 
 Demo video for the PSPnet-18 on Cityscapes
